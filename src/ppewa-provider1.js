@@ -14,23 +14,6 @@ import './shared-styles.js';
 
 class ProviderView1 extends PolymerElement {
   static get template() {
-window.addEventListener('DOMContentLoaded', function() {
-  alert("oh for fuck's sake: " + document.getElementById('ppeNeed'));
-  const ppeNeedComboBox = document.getElementById('ppeNeed');
-    ppeNeedComboBox.items = [
-      'Disinfectant/Bleach Wipes',
-      'Face Shields',
-      'Gloves',
-      'Goggles',
-      'Gowns',
-      'Hand Sanitizer',
-      'Masks: N95',
-      'Masks: Surgical',
-      'Mouth Swabs',
-      'Thermometers'
-    ];
-    ppeNeedComboBox.selectedItems = [ ];
-});
     return html`
       <style include="shared-styles">
         :host {
@@ -55,10 +38,21 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 }
 
-window.customElements.define('ppewa-provider1', ProviderView1);
-
-
-
-window.customElements.whenDefined('ppewa-provider1').then(function() {
-  alert("oh for fuck's sake");
+window.addEventListener('DOMContentLoaded', function() {
+  alert("oh for fuck's sake: " + document.getElementById('ppeNeed'));
+  const ppeNeedComboBox = document.getElementById('ppeNeed');
+    ppeNeedComboBox.items = [
+      'Disinfectant/Bleach Wipes',
+      'Face Shields',
+      'Gloves',
+      'Goggles',
+      'Gowns',
+      'Hand Sanitizer',
+      'Masks: N95',
+      'Masks: Surgical',
+      'Mouth Swabs',
+      'Thermometers'
+    ];
+    ppeNeedComboBox.selectedItems = [ ];
 });
+window.customElements.define('ppewa-provider1', ProviderView1);
