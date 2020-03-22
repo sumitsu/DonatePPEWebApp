@@ -1,6 +1,8 @@
-h1. DonatePPEWebApp
+# DonatePPEWebApp
 
 Front-end prototype of: https://helpwithcovid.com/projects/221-communitysos
+
+Objective: to help doctors and healthcare providers on the front lines of the Coronavirus/COVID-19 pandemic get the PPE they need by connecting them with donors.
 
 See also:
 
